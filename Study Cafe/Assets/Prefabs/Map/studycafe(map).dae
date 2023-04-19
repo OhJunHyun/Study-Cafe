@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.2.1 commit date:2022-07-05, commit time:15:44, hash:a2d59b2dac9e</authoring_tool>
+    </contributor>
+    <created>2023-04-15T19:42:33</created>
+    <modified>2023-04-15T19:42:33</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">33.65425</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">1</mode>
+          <gamma sid="blender_gamma" type="float">1</gamma>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <shadow_r sid="blender_shadow_r" type="float">0</shadow_r>
+          <shadow_g sid="blender_shadow_g" type="float">0</shadow_g>
+          <shadow_b sid="blender_shadow_b" type="float">0</shadow_b>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <dist sid="blender_dist" type="float">29.99998</dist>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <att1 sid="att1" type="float">0</att1>
+          <att2 sid="att2" type="float">1</att2>
+          <falloff_type sid="falloff_type" type="int">2</falloff_type>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">30.002</clipend>
+          <bias sid="bias" type="float">1</bias>
+          <soft sid="soft" type="float">3</soft>
+          <bufsize sid="bufsize" type="int">2880</bufsize>
+          <samp sid="samp" type="int">3</samp>
+          <buffers sid="buffers" type="int">1</buffers>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_effects>
+    <effect id="Material_001-effect">
+      <profile_COMMON>
+        <newparam sid="wall1_Base_Color-surface">
+          <surface type="2D">
+            <init_from>wall1_Base_Color</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wall1_Base_Color-sampler">
+          <sampler2D>
+            <source>wall1_Base_Color-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="wall1_Base_Color-sampler" texcoord="UV 맵"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_004-effect">
+      <profile_COMMON>
+        <newparam sid="wall3_Base_Color-surface">
+          <surface type="2D">
+            <init_from>wall3_Base_Color</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wall3_Base_Color-sampler">
+          <sampler2D>
+            <source>wall3_Base_Color-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="wall3_Base_Color-sampler" texcoord="UV 맵"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_005-effect">
+      <profile_COMMON>
+        <newparam sid="wall4_Base_Color-surface">
+          <surface type="2D">
+            <init_from>wall4_Base_Color</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wall4_Base_Color-sampler">
+          <sampler2D>
+            <source>wall4_Base_Color-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="wall4_Base_Color-sampler" texcoord="UV 맵"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_003-effect">
+      <profile_COMMON>
+        <newparam sid="wall2_Base_Color-surface">
+          <surface type="2D">
+            <init_from>wall2_Base_Color</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="wall2_Base_Color-sampler">
+          <sampler2D>
+            <source>wall2_Base_Color-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="wall2_Base_Color-sampler" texcoord="UV 맵"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_002-effect">
+      <profile_COMMON>
+        <newparam sid="floor_Base_Color_001-surface">
+          <surface type="2D">
+            <init_from>floor_Base_Color_001</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="floor_Base_Color_001-sampler">
+          <sampler2D>
+            <source>floor_Base_Color_001-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="floor_Base_Color_001-sampler" texcoord="UV 맵"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="floor_Base_Color_001" name="floor_Base_Color_001">
+      <init_from>floor%20Base%20Color.001.png</init_from>
+    </image>
+    <image id="wall1_Base_Color" name="wall1_Base_Color">
+      <init_from>wall1%20Base%20Color.png</init_from>
+    </image>
+    <image id="wall2_Base_Color" name="wall2_Base_Color">
+      <init_from>wall2%20Base%20Color.png</init_from>
+    </image>
+    <image id="wall3_Base_Color" name="wall3_Base_Color">
+      <init_from>wall3%20Base%20Color.png</init_from>
+    </image>
+    <image id="wall4_Base_Color" name="wall4_Base_Color">
+      <init_from>wall4%20Base%20Color.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Material_001-material" name="Material.001">
+      <instance_effect url="#Material_001-effect"/>
+    </material>
+    <material id="Material_004-material" name="Material.004">
+      <instance_effect url="#Material_004-effect"/>
+    </material>
+    <material id="Material_005-material" name="Material.005">
+      <instance_effect url="#Material_005-effect"/>
+    </material>
+    <material id="Material_003-material" name="Material.003">
+      <instance_effect url="#Material_003-effect"/>
+    </material>
+    <material id="Material_002-material" name="Material.002">
+      <instance_effect url="#Material_002-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="큐브_010-mesh" name="큐브.010">
+      <mesh>
+        <source id="큐브_010-mesh-positions">
+          <float_array id="큐브_010-mesh-positions-array" count="48">-10.02777 -10.02277 -0.4050074 -10.02777 -10.02277 0.4050074 -10.02777 10.02277 -0.4050074 -10.02777 10.02277 0.4050074 10.02777 -10.02277 -0.4050074 10.02777 -10.02277 0.4050074 10.02777 10.02277 -0.4050074 10.02777 10.02277 0.4050074 8.656594 -5.533341 -0.4050074 8.656594 -8.525336 -0.4050074 -1.888363 -8.525336 -0.4050074 -1.888363 -5.533341 -0.4050074 -1.888363 -5.533341 0.4050074 -1.888363 -8.525336 0.4050074 8.656594 -8.525336 0.4050074 8.656594 -5.533341 0.4050074</float_array>
+          <technique_common>
+            <accessor source="#큐브_010-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_010-mesh-normals">
+          <float_array id="큐브_010-mesh-normals-array" count="24">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#큐브_010-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_010-mesh-map-0">
+          <float_array id="큐브_010-mesh-map-0-array" count="192">0.625 0 0.375 0.25 0.375 0 0.625 0.25 0.375 0.5 0.375 0.25 0.625 0.5 0.375 0.75 0.375 0.5 0.625 0.75 0.375 1 0.375 0.75 0.375 0.75 0.2264608 0.7313246 0.3579078 0.7313246 0.375 0.5 0.3579078 0.6940096 0.2264608 0.6940096 0.625 0.5 0.7735391 0.6940096 0.6420922 0.6940096 0.7735392 0.7313246 0.625 0.75 0.6420922 0.7313246 0.375 0.1093768 0.375 0.04034602 0.375 0.1093768 0.375 0.6406232 0.375 0.709654 0.375 0.709654 0.125 0.75 0.375 0.5 0.375 0.5 0.875 0.5 0.625 0.75 0.875 0.5 0.625 0 0.625 0.25 0.375 0.25 0.625 0.25 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.75 0.375 0.75 0.625 0.75 0.625 1 0.375 1 0.375 0.75 0.125 0.75 0.2264608 0.7313246 0.2264608 0.6940096 0.2264608 0.7313246 0.125 0.75 0.125 0.75 0.125 0.5 0.2264608 0.6940096 0.125 0.5 0.375 0.5 0.2264608 0.6940096 0.375 0.5 0.375 0.75 0.3579078 0.6940096 0.375 0.75 0.3579078 0.7313246 0.3579078 0.6940096 0.6420922 0.6940096 0.6420922 0.7313246 0.625 0.75 0.625 0.5 0.875 0.5 0.7735391 0.6940096 0.875 0.5 0.875 0.75 0.7735391 0.6940096 0.875 0.75 0.7735392 0.7313246 0.7735391 0.6940096 0.6420922 0.6940096 0.625 0.75 0.625 0.5 0.7735392 0.7313246 0.875 0.75 0.625 0.75 0.375 0.1093768 0.375 0.04034602 0.375 0.04034602 0.375 0.6406232 0.375 0.6406232 0.375 0.709654 0.125 0.75 0.125 0.75 0.375 0.5 0.875 0.5 0.625 0.75 0.625 0.75</float_array>
+          <technique_common>
+            <accessor source="#큐브_010-mesh-map-0-array" count="96" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="큐브_010-mesh-vertices">
+          <input semantic="POSITION" source="#큐브_010-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_001-material" count="32">
+          <input semantic="VERTEX" source="#큐브_010-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#큐브_010-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#큐브_010-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 4 4 12 10 4 13 9 4 14 6 4 15 8 4 16 11 4 17 7 5 18 12 5 19 15 5 20 13 5 21 5 5 22 14 5 23 10 1 24 14 1 25 9 1 26 11 3 27 15 3 28 12 3 29 9 0 30 15 0 31 8 0 32 10 2 33 12 2 34 13 2 35 1 0 36 3 0 37 2 0 38 3 1 39 7 1 40 6 1 41 7 2 42 5 2 43 4 2 44 5 3 45 1 3 46 0 3 47 4 4 48 0 4 49 10 4 50 11 4 51 10 4 52 0 4 53 0 4 54 2 4 55 11 4 56 2 4 57 6 4 58 11 4 59 6 6 60 4 6 61 8 6 62 4 4 63 9 4 64 8 4 65 15 5 66 14 5 67 5 5 68 7 5 69 3 5 70 12 5 71 3 7 72 1 7 73 12 7 74 1 5 75 13 5 76 12 5 77 15 5 78 5 5 79 7 5 80 13 5 81 1 5 82 5 5 83 10 1 84 13 1 85 14 1 86 11 3 87 8 3 88 15 3 89 9 0 90 14 0 91 15 0 92 10 2 93 11 2 94 12 2 95</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="큐브_009-mesh" name="큐브.009">
+      <mesh>
+        <source id="큐브_009-mesh-positions">
+          <float_array id="큐브_009-mesh-positions-array" count="24">-10.02777 -10.02277 -0.4050074 -10.02777 -10.02277 0.4050074 -10.02777 10.02277 -0.4050074 -10.02777 10.02277 0.4050074 10.02777 -10.02277 -0.4050074 10.02777 -10.02277 0.4050074 10.02777 10.02277 -0.4050074 10.02777 10.02277 0.4050074</float_array>
+          <technique_common>
+            <accessor source="#큐브_009-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_009-mesh-normals">
+          <float_array id="큐브_009-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#큐브_009-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_009-mesh-map-0">
+          <float_array id="큐브_009-mesh-map-0-array" count="72">0.625 0 0.375 0.25 0.375 0 0.625 0.25 0.375 0.5 0.375 0.25 0.625 0.5 0.375 0.75 0.375 0.5 0.625 0.75 0.375 1 0.375 0.75 0.375 0.5 0.125 0.75 0.125 0.5 0.875 0.5 0.625 0.75 0.625 0.5 0.625 0 0.625 0.25 0.375 0.25 0.625 0.25 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.75 0.375 0.75 0.625 0.75 0.625 1 0.375 1 0.375 0.5 0.375 0.75 0.125 0.75 0.875 0.5 0.875 0.75 0.625 0.75</float_array>
+          <technique_common>
+            <accessor source="#큐브_009-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="큐브_009-mesh-vertices">
+          <input semantic="POSITION" source="#큐브_009-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_004-material" count="12">
+          <input semantic="VERTEX" source="#큐브_009-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#큐브_009-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#큐브_009-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 3 5 15 5 5 16 7 5 17 1 0 18 3 0 19 2 0 20 3 1 21 7 1 22 6 1 23 7 2 24 5 2 25 4 2 26 5 3 27 1 3 28 0 3 29 6 4 30 4 4 31 0 4 32 3 5 33 1 5 34 5 5 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="큐브_008-mesh" name="큐브.008">
+      <mesh>
+        <source id="큐브_008-mesh-positions">
+          <float_array id="큐브_008-mesh-positions-array" count="24">-10.02777 -10.02277 -0.4050074 -10.02777 -10.02277 0.4050074 -10.02777 10.02277 -0.4050074 -10.02777 10.02277 0.4050074 10.02777 -10.02277 -0.4050074 10.02777 -10.02277 0.4050074 10.02777 10.02277 -0.4050074 10.02777 10.02277 0.4050074</float_array>
+          <technique_common>
+            <accessor source="#큐브_008-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_008-mesh-normals">
+          <float_array id="큐브_008-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#큐브_008-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_008-mesh-map-0">
+          <float_array id="큐브_008-mesh-map-0-array" count="72">0.625 0 0.375 0.25 0.375 0 0.625 0.25 0.375 0.5 0.375 0.25 0.625 0.5 0.375 0.75 0.375 0.5 0.625 0.75 0.375 1 0.375 0.75 0.375 0.5 0.125 0.75 0.125 0.5 0.875 0.5 0.625 0.75 0.625 0.5 0.625 0 0.625 0.25 0.375 0.25 0.625 0.25 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.75 0.375 0.75 0.625 0.75 0.625 1 0.375 1 0.375 0.5 0.375 0.75 0.125 0.75 0.875 0.5 0.875 0.75 0.625 0.75</float_array>
+          <technique_common>
+            <accessor source="#큐브_008-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="큐브_008-mesh-vertices">
+          <input semantic="POSITION" source="#큐브_008-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_005-material" count="12">
+          <input semantic="VERTEX" source="#큐브_008-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#큐브_008-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#큐브_008-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 3 5 15 5 5 16 7 5 17 1 0 18 3 0 19 2 0 20 3 1 21 7 1 22 6 1 23 7 2 24 5 2 25 4 2 26 5 3 27 1 3 28 0 3 29 6 4 30 4 4 31 0 4 32 3 5 33 1 5 34 5 5 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="큐브_007-mesh" name="큐브.007">
+      <mesh>
+        <source id="큐브_007-mesh-positions">
+          <float_array id="큐브_007-mesh-positions-array" count="24">-10.02777 -10.02277 -0.4050074 -10.02777 -10.02277 0.4050074 -10.02777 10.02277 -0.4050074 -10.02777 10.02277 0.4050074 10.02777 -10.02277 -0.4050074 10.02777 -10.02277 0.4050074 10.02777 10.02277 -0.4050074 10.02777 10.02277 0.4050074</float_array>
+          <technique_common>
+            <accessor source="#큐브_007-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_007-mesh-normals">
+          <float_array id="큐브_007-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#큐브_007-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_007-mesh-map-0">
+          <float_array id="큐브_007-mesh-map-0-array" count="72">0.625 0 0.375 0.25 0.375 0 0.625 0.25 0.375 0.5 0.375 0.25 0.625 0.5 0.375 0.75 0.375 0.5 0.625 0.75 0.375 1 0.375 0.75 0.375 0.5 0.125 0.75 0.125 0.5 0.875 0.5 0.625 0.75 0.625 0.5 0.625 0 0.625 0.25 0.375 0.25 0.625 0.25 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.75 0.375 0.75 0.625 0.75 0.625 1 0.375 1 0.375 0.5 0.375 0.75 0.125 0.75 0.875 0.5 0.875 0.75 0.625 0.75</float_array>
+          <technique_common>
+            <accessor source="#큐브_007-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="큐브_007-mesh-vertices">
+          <input semantic="POSITION" source="#큐브_007-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_003-material" count="12">
+          <input semantic="VERTEX" source="#큐브_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#큐브_007-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#큐브_007-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 3 5 15 5 5 16 7 5 17 1 0 18 3 0 19 2 0 20 3 1 21 7 1 22 6 1 23 7 2 24 5 2 25 4 2 26 5 3 27 1 3 28 0 3 29 6 4 30 4 4 31 0 4 32 3 5 33 1 5 34 5 5 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="큐브_006-mesh" name="큐브.006">
+      <mesh>
+        <source id="큐브_006-mesh-positions">
+          <float_array id="큐브_006-mesh-positions-array" count="24">-10.02777 -10.02277 -0.4050074 -10.02777 -10.02277 0.4050074 -10.02777 10.02277 -0.4050074 -10.02777 10.02277 0.4050074 10.02777 -10.02277 -0.4050074 10.02777 -10.02277 0.4050074 10.02777 10.02277 -0.4050074 10.02777 10.02277 0.4050074</float_array>
+          <technique_common>
+            <accessor source="#큐브_006-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_006-mesh-normals">
+          <float_array id="큐브_006-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#큐브_006-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="큐브_006-mesh-map-0">
+          <float_array id="큐브_006-mesh-map-0-array" count="72">0.625 0 0.375 0.25 0.375 0 0.625 0.25 0.375 0.5 0.375 0.25 0.625 0.5 0.375 0.75 0.375 0.5 0.625 0.75 0.375 1 0.375 0.75 0.375 0.5 0.125 0.75 0.125 0.5 0.875 0.5 0.625 0.75 0.625 0.5 0.625 0 0.625 0.25 0.375 0.25 0.625 0.25 0.625 0.5 0.375 0.5 0.625 0.5 0.625 0.75 0.375 0.75 0.625 0.75 0.625 1 0.375 1 0.375 0.5 0.375 0.75 0.125 0.75 0.875 0.5 0.875 0.75 0.625 0.75</float_array>
+          <technique_common>
+            <accessor source="#큐브_006-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="큐브_006-mesh-vertices">
+          <input semantic="POSITION" source="#큐브_006-mesh-positions"/>
+        </vertices>
+        <triangles material="Material_002-material" count="12">
+          <input semantic="VERTEX" source="#큐브_006-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#큐브_006-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#큐브_006-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 5 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 3 5 15 5 5 16 7 5 17 1 0 18 3 0 19 2 0 20 3 1 21 7 1 22 6 1 23 7 2 24 5 2 25 4 2 26 5 3 27 1 3 28 0 3 29 6 4 30 4 4 31 0 4 32 3 5 33 1 5 34 5 5 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="wall1" name="wall1" type="NODE">
+        <matrix sid="transform">-1.31134e-8 0 0.5 10 0 1 0 0 -0.3 0 -2.18557e-8 5.01 0 0 0 1</matrix>
+        <instance_geometry url="#큐브_010-mesh" name="wall1">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_001-material" target="#Material_001-material">
+                <bind_vertex_input semantic="UV 맵" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="wall3" name="wall3" type="NODE">
+        <matrix sid="transform">-1.31134e-8 0 0.5 -10 0 1 0 0 -0.3 0 -2.18557e-8 5.01 0 0 0 1</matrix>
+        <instance_geometry url="#큐브_009-mesh" name="wall3">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_004-material" target="#Material_004-material">
+                <bind_vertex_input semantic="UV 맵" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="wall4" name="wall4" type="NODE">
+        <matrix sid="transform">-1.31134e-8 1 -2.18557e-8 0 0 -4.37114e-8 -0.5 -10 -0.3 -4.37114e-8 9.55343e-16 5.01 0 0 0 1</matrix>
+        <instance_geometry url="#큐브_008-mesh" name="wall4">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_005-material" target="#Material_005-material">
+                <bind_vertex_input semantic="UV 맵" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="wall2" name="wall2" type="NODE">
+        <matrix sid="transform">-1.31134e-8 1 -2.18557e-8 0 0 -4.37114e-8 -0.5 10 -0.3 -4.37114e-8 9.55343e-16 5.01 0 0 0 1</matrix>
+        <instance_geometry url="#큐브_007-mesh" name="wall2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_003-material" target="#Material_003-material">
+                <bind_vertex_input semantic="UV 맵" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="floor" name="floor" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 2 0 0 0 1</matrix>
+        <instance_geometry url="#큐브_006-mesh" name="floor">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_002-material" target="#Material_002-material">
+                <bind_vertex_input semantic="UV 맵" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 -0.786944 0.9551712 -0.1998834 0.2183912 0.2081987 -0.05518906 0.6045247 0.7946723 11.76585 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
